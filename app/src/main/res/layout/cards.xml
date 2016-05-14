@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout
+    android:layout_width="match_parent"
+
+
+    android:id="@+id/comp"
+    android:layout_height="match_parent">    <com.flaviofaria.kenburnsview.KenBurnsView
+    android:id="@+id/imageCover"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/sum"
+    android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+
+        <View
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/into_frag"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+             />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".MainActivity"
+        >
+        <android.support.v7.widget.Toolbar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+
+            app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@android:color/transparent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:fontFamily="sans-serif-light"
+                    android:layout_height="wrap_content"
+                    android:text="Catnap"
+                    android:textSize="18dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_centerVertical="true"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/textView4"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/im"
+                    android:layout_toEndOf="@+id/im" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:layout_height="200dp"
+            android:paddingBottom="7dp"
+            android:clickable="true"
+android:layout_below="@+id/toolbar"
+            android:id="@+id/relLay"
+
+            xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="3dp"
+
+
+                app:cardBackgroundColor="#00000000"
+                android:id="@+id/cv1"
+android:layout_margin="7dp"
+                app:cardCornerRadius="2dp"
+
+                >
+
+                <RelativeLayout
+                    android:layout_margin="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_stat_more23_1"
+                        android:id="@+id/overflow"
+                        android:layout_alignBottom="@+id/button3"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="     Start"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="20dp"
+                        android:id="@+id/tv"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignLeft="@+id/button1"
+                        android:layout_alignStart="@+id/button1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="     End"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:textSize="20dp"
+                        android:id="@+id/tvend"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignLeft="@+id/button2"
+                        android:layout_alignStart="@+id/button2" />
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="297dp"
+                        android:background="@drawable/buto"
+                        android:textColor="#FFFFFF"
+                        android:text="Select"
+                        android:layout_below="@+id/tv"
+                        android:layout_toLeftOf="@+id/button3"
+                        android:layout_toStartOf="@+id/button3"
+                        android:layout_marginTop="24dp" />
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="297dp"
+                        android:background="@drawable/buto"
+                        android:textColor="#FFFFFF"
+                        android:text="Select"
+
+                        android:layout_alignTop="@+id/button1"
+                        android:layout_toRightOf="@+id/button3"
+                        android:layout_toEndOf="@+id/button3" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirm"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+
+                        android:id="@+id/button3"
+                        android:background="@drawable/buto"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</FrameLayout>
+    </RelativeLayout>
+
+
